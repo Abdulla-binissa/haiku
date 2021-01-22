@@ -101,6 +101,6 @@ function Comment(props) {
 }
 
 const mapStateToProps = (store) => ({ users: store.usersState.users })
-const mapDispatchToProps = (dispatch) => bindActionCreators({ fetchUserData }, dispatch )
+const mapDispatchToProps = (dispatch) => bindActionCreators({ fetchUsersData }, dispatch )
 
 export default connect( mapStateToProps, mapDispatchToProps )(Comment)

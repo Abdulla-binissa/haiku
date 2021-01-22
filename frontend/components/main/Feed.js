@@ -21,7 +21,7 @@ function Feed(props) {
     const onLikePress = (userId, postId) => {
         firebase.firestore()
             .collection("posts")
-            .doc(uid)
+            .doc(userId)
             .collection("userPosts")
             .doc(postId)
             .collection('likes')
@@ -32,7 +32,7 @@ function Feed(props) {
     const onDislikePress = (userId, postId) => {
         firebase.firestore()
             .collection("posts")
-            .doc(uid)
+            .doc(userId)
             .collection("userPosts")
             .doc(postId)
             .collection('likes')
