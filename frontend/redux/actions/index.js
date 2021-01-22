@@ -1,6 +1,15 @@
 import firebase from 'firebase'
 import 'firebase/firestore'
-import { USER_STATE_CHANGE, USER_POSTS_STATE_CHANGE, USER_FOLLOWING_STATE_CHANGE, USERS_DATA_STATE_CHANGE, CLEAR_DATA, USERS_LIKES_STATE_CHANGE } from '../constants/index'
+import {
+    USER_STATE_CHANGE
+    , USER_POSTS_STATE_CHANGE
+    , USER_FOLLOWING_STATE_CHANGE
+    , USERS_DATA_STATE_CHANGE
+    , USERS_POSTS_STATE_CHANGE
+    , USERS_LIKES_STATE_CHANGE
+    , USER_CHATS_STATE_CHANGE
+    , CLEAR_DATA
+} from '../constants/index'
 
 export function clearData(){
     return ((dispatch) => {

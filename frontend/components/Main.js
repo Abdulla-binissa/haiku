@@ -27,6 +27,10 @@ export class Main extends Component {
         this.props.fetchUserFollowing()
     }
 
+    componentDidMount() {
+        this.props.reload();
+    }
+
     render() {
         return (
             <Tab.Navigator initialRouteName="Feed" labeled={false} >
