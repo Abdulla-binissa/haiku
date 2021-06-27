@@ -24,11 +24,7 @@ export class Main extends Component {
         this.props.clearData()
         this.props.fetchUser()
         this.props.fetchUserPosts()
-        this.props.fetchUserFollowing()
-    }
-
-    componentDidMount() {
-        this.props.reload();
+        this.props.fetchUserFollowing() 
     }
 
     render() {
